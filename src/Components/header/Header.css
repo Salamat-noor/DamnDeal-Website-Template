@@ -1,0 +1,169 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px !important;
+}
+.HeaderRowOne {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0px !important;
+}
+.headerPara {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: left;
+  cursor: none;
+}
+.cols,
+.headerdropdown {
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+.headerdropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.socialIcons img {
+  height: 0.8rem;
+  cursor: pointer;
+}
+
+.HeaderRowtwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.headerLogo {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.headerLogo .homepageLink {
+  width: 100%;
+  height: 100%;
+}
+.headerLogo .homepageLink img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.headerForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formSearch {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #f5f8fa;
+  color: #000;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.formSearch #headerSearch {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  border-right: 2px solid gray;
+  width: 60%;
+  height: 40px;
+  outline: none;
+}
+.formSearch > img {
+  width: 1rem;
+}
+.headerRow2Col2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+.colsrow2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+.colsrow2 > img {
+  width: 1rem;
+}
+@media (max-width: 1441px) {
+  .cols,
+  .headerdropdown {
+    font-size: 0.6rem;
+  }
+  .formSearch #headerSearch {
+    height: 35px;
+  }
+}
+@media (max-width: 1025px) {
+  .formSearch #headerSearch {
+    height: 40px;
+  }
+}
+@media (max-width: 991.5px) {
+  .header {
+    display: flex !important;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .header .HeaderRowOne {
+    text-align: center;
+    row-gap: 10vh;
+  }
+  .headerPara {
+    font-size: 15px;
+    text-align: center;
+  }
+  .cols,
+  .headerdropdown {
+    font-size: 15px;
+  }
+
+  .cols {
+    text-align: center;
+  }
+  .socialIcons img {
+    height: 18px;
+  }
+  .headerRow2Col2 {
+    font-size: 12px;
+  }
+
+  .HeaderRowtwo {
+    flex-direction: column;
+    gap: 3vh;
+  }
+  .formSearch #headerSearch {
+    width: 85%;
+    padding: 5px 8px;
+    height: 30px;
+  }
+  .formSearch > img {
+    width: 18px;
+  }
+
+  .classhidden {
+    display: none !important;
+  }
+  .formSearch {
+    width: 100%;
+  }
+  .colsrow2 > img {
+    width: 18px;
+  }
+}

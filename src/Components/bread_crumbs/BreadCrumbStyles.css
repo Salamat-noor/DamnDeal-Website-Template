@@ -1,0 +1,71 @@
+.ant-breadcrumb {
+  margin: 25px 0px !important;
+}
+.ant-breadcrumb > ol {
+  gap: 12px;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.ant-breadcrumb > ol > li > span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.ant-breadcrumb > ol > li > span:hover > a,
+.ant-breadcrumb > ol > li > span:hover > a > span > svg,
+.ant-breadcrumb > ol > li > span:hover > span > svg {
+  fill: orange;
+  color: orange;
+}
+.ant-breadcrumb > ol > li > span > a {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.ant-breadcrumb > ol > li > span > a > span > svg,
+.ant-breadcrumb > ol > li > span > span > svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #333;
+}
+.ant-breadcrumb > ol > li > span > a > span > svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: green;
+}
+
+@media (max-width: 1024px) {
+  .ant-breadcrumb > ol {
+    gap: 4px;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  .ant-breadcrumb > ol > li > span > a > span > svg,
+  .ant-breadcrumb > ol > li > span > span > svg {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .ant-breadcrumb > ol {
+    gap: 1px;
+    font-size: 14px;
+  }
+  .ant-breadcrumb > ol > li > span {
+    gap: 1px;
+  }
+  .ant-breadcrumb > ol > li > span > a > span > svg,
+  .ant-breadcrumb > ol > li > span > span > svg {
+    height: 12px;
+    width: 12px;
+  }
+  .ant-breadcrumb > ol > li > span > a > span > svg {
+    width: 15px;
+    height: 15px;
+  }
+}
